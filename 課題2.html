@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Hello World!</title>
+</head>
+<body>
+  <h1>メッセージ</h1>
+  <textarea id="message" rows="10" cols="60"></textarea>
+  <p>
+    <button name="helloButton" onclick="buttonHello();">はろー</button>
+  </p>
+  <script type="text/javascript">
+    function buttonHello() {
+      setMessage("Hello World!");
+    }
+    function setMessage(text) {
+      document.getElementById("message").value = text;
+    }
+  </script>
+<noscript>JavaScriptが利用できないブラウザです</noscript>
+</body>
+</html>
